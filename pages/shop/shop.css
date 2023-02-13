@@ -1,0 +1,118 @@
+.shop{
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.shop h1{
+    align-self: center;
+    background: rgb(228,183,160);
+    background: linear-gradient(90deg, rgba(228,183,160,1) 0%, rgba(160,205,228,1) 36%, rgba(254,250,224,1) 100%);
+    filter: contrast(200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shop__container{
+    margin: 2rem;
+}
+
+.shop__content{
+    display: flex;
+    column-gap: 5rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.shop__content-item{
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 1.5rem;
+    width: 14rem;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    box-shadow: 1px 1px 15px black;
+}
+
+.shop__content-item:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 30px black;
+}
+
+.shop__content-item:active{
+    box-shadow: 1px 1px 30px green;
+}
+
+.shop__content-item b{
+    font-weight: 100;
+}
+
+.shop__content-item img {
+    width: 40%;
+}
+
+.shop__container-modal{
+    position: fixed;
+    background-color: white;
+    box-shadow: 1px 1px 15px black;
+    width: 50%;
+    height: 50%;
+    top: calc(50% - 25%);
+    left: calc(50% - 25%);
+}
+
+.shop__container-modal div img{
+    width: 40%;
+}
+
+.modal-close_button{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 769px){
+    .shop__content-item{
+        width: 10rem;
+        height: 10rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 376px){
+    .shop__content-item{
+        width: 8rem;
+        height: 8rem;
+        font-size: 1rem;
+        row-gap: 0;
+    }
+}
+
+@media (max-width: 321px){
+    .shop__content-item{
+        width: 5rem;
+        height: 5rem;
+        font-size: 0.8rem;
+        row-gap: 0;
+    }
+}

@@ -1,0 +1,23 @@
+.main__body-content-item1{
+    display: flex;
+    padding: 2rem;
+    column-gap: 7rem;
+}
+
+.main__body-content-item1 div:nth-child(2) h1{
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
+}
+
+
+.main__body-content-item1 div img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 450px){
+    .main__body-content-item1{
+        flex-direction: column;
+    }
+
+} 
